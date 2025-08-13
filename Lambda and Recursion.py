@@ -81,19 +81,20 @@
 
 # 4.Sum of list:
 
-# numbers = [1, 2, 3, 4, 5]
-# def cal_sum():
-#     total=0
-#     for i in numbers:
-#         total+=i
-#         if total>=5:
-#             break
-#     print(total)
-# cal_sum()
+# numbers = [1,2,3,4,5,6,7]
 
+# def sum_list(numbers):
+#     total = 0
+#     for num in numbers:
+#         total += num
+#     return total
+
+# result=sum_list(numbers)
+# print("Sum of list:", result)
 
 
 # 5.Get a input from user as number. If user entered negative number. Throw message as invalid. If user entered  0 throw factorial of 0.  Else it has to act as recursive factorial function:
+
 
 # def factorial(n):
 #     if n < 0:
@@ -103,4 +104,8 @@
 #     else:
 #         return n *factorial(n - 1)  
 
-# print(factorial(7))
+# n=int(input("Enter a number:"))
+# print(factorial(n))
+
+
+
