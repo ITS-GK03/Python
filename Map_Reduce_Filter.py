@@ -209,5 +209,3 @@ import functools
 # result = functools.reduce(factorial_num, range(1, num + 1))
 # print(result)
 
-
-
