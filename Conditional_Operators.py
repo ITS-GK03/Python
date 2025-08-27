@@ -40,7 +40,7 @@
 #     print("number2 is greater than number1")
 
 # else:
-    # print("Both are equal")
+#     print("Both are equal")
     
 
 
@@ -59,7 +59,6 @@
 # 6.Check if a character is a vowel:
 
 # character=input("Enter a character:")
-# print(type(character))
 
 # if character in ("a,e,i,o,u"):
 #     print("character is a vowel:", character)
@@ -122,7 +121,6 @@
 # 10.Check if a person is a teenager (age between 13 and 19):
 
 # age=int(input("Enter a age:"))
-# print(type(age))
 
 # if age>=13 and age<=19:
 #     print("person is a teenager:", age)
