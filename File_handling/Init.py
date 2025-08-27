@@ -28,27 +28,27 @@ import random
 # jumped -> 2
 
 
-# with open("first.txt", "w") as myfile:
-#     myfile.write("Later, the stork decided jumped to return the favor. She invited the fox to her house and served a delicious meal in a tall, narrow-necked jar. The stork was able to enjoy her food by dipping her beak into the jar, but the fox could not reach the food and went home hungry.")
-# count_the = 0
-# count_cat = 0
-# count_jumped = 0
+with open("first.txt", "w") as myfile:
+    myfile.write("Later, the stork decided jumped to return the favor. She invited the fox to her house and served a delicious meal in a tall, narrow-necked jar. The stork was able to enjoy her food by dipping her beak into the jar, but the fox could not reach the food and went home hungry.")
+count_the = 0
+count_cat = 0
+count_jumped = 0
 
-# with open("first.txt", "r") as myfile:
-#     text = myfile.read().lower().replace(".", "").replace(",", "")
-#     words = text.split()
-#     for word in words:
-#         if word == "the":
-#             count_the += 1
-#         elif word == "cat":
-#             count_cat += 1
-#         elif word == "jumped":
-#             count_jumped += 1
+with open("first.txt", "r") as myfile:
+    text = myfile.read().lower().replace(".", "").replace(",", "")
+    words = text.split()
+    for word in words:
+        if word == "the":
+            count_the += 1
+        elif word == "cat":
+            count_cat += 1
+        elif word == "jumped":
+            count_jumped += 1
 
-# with open("first.text", "w") as myfile:
-#     myfile.write("Count of 'the': " + str(count_the) + "\n")
-#     myfile.write("Count of 'cat': " + str(count_cat) + "\n")
-#     myfile.write("Count of 'jumped': " + str(count_jumped) + "\n")
+with open("first.text", "w") as myfile:
+    myfile.write("Count of 'the': " + str(count_the) + "\n")
+    myfile.write("Count of 'cat': " + str(count_cat) + "\n")
+    myfile.write("Count of 'jumped': " + str(count_jumped) + "\n")
 
 
 
@@ -100,9 +100,3 @@ import random
 
 # 4)Transfer data from one file to another file using a loop:
 
-with open ("first.txt","w") as myfile:
-    myfile.write("Content refers to any information—such as text, images, videos, or audio—created and shared to inform, entertain, or engage an audience online. Common examples include blog posts, infographics, social media posts, and videos. Effective content is often original, answers a question, is properly formatted and sourced, and is easy to consume")
-
-with open("first.text","w") as myfile:
-    myfile.read("first.txt","r")
-    myfile.close
