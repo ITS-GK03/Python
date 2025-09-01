@@ -103,3 +103,50 @@
 # kodai1=Kodaikanal("Guna Cave", "Pine forest")
 
 # kodai1.getter_fun()
+
+
+#OOPS - Object Orientation Programing System.
+#OOPS is used for code resuablity,update and also security...
+
+#Types of OOPS:                                              
+# 1.class and objects
+# 2.Encapsulation
+# 3.Inheritance
+# 4.Polymorphism
+# 5.Abstraction 
+
+
+
+# class mygame:
+#     userid = "evil"
+#     level=71
+
+#     def account(self):
+#         print("Id worth 35k browww")
+
+
+# myid=mygame()
+# print(myid.userid)
+
+# myid=mygame()
+# print(myid.level)
+
+# myid.account()
+
+
+
+
+# class cricket:
+#     player="gowtham"
+
+#     def __init__(self, name, jer_num):
+#         self.name= name
+#         self.jer_num= jer_num
+
+#     def display(self):
+#         print(f"Name of the player:  {self.name}, jersey number is:  {self.jer_num}")
+
+
+
+# cricket2=cricket("Gowtham sanjay", 7)
+# cricket2.display()
