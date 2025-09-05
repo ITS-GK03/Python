@@ -25,7 +25,7 @@
 #     print("Scissor beats paper")
 
 # elif player1=='paper'and  player2=='rock':
-#     print("Paper beats rock")
+#     print("rock beats paper")
 
 # elif player1=='rock'and player2=='paper':
 #     print("Rock beats paper")
@@ -52,10 +52,10 @@
 #     print("Login Failed")
 
 # elif username!="admin" and password=='1234':
-#      print("User not found")
+#     print("User not found")
 
 # elif username!="admin" and password!='1234':
-#      print("User not found")
+#     print("User not found")
 
 
 #Time Based Greeting:
