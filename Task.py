@@ -264,3 +264,112 @@
 # else:
 #     print(f"{number_to_find} is not in the list.")
 
+
+
+#21.Print common elements in two lists:-
+# list1 = [1, 2, 3, 4, 5]
+# list2 = [4, 5, 6, 7, 8]
+
+# common_elements = set(list1) & set(list2)
+# print(f"Common elements: {common_elements}")
+
+
+
+#22.Remove all negative numbers in a list:-
+# list=[1,2,3,-56,-3,23,-5,27,-89]
+# new_list=[]
+# for i in list:
+#     if i<0:
+#         continue
+#     elif i>0:
+#         new_list.append(i)
+# print(new_list)
+
+
+
+#23.Sum only even numbers:-
+# list=[1,2,3,4,5,67,8,92]
+# even=0
+# for i in list:
+#     if i%2==0:
+#         even+=i
+#     else:
+#         continue
+# print(even)
+
+
+
+#24.Remove elements less than 10:-
+# list=[45,32,1,23,5,67,4,2,8]
+# list_10=[]
+# for i in list:
+#     if i<10:
+#         continue
+#     else:
+#         list_10.append(i)
+# print(list_10)
+
+
+
+#25.Filter only alphabet characters from a mixed list:-
+# mixed_list = ['hello', 123, 'world', 'p-y-t-h-o-n', 456, 'is', 'great']
+# alphabet_list = []
+
+# for item in mixed_list:
+#     if isinstance(item, str) and item.isalpha():
+#         alphabet_list.append(item)
+
+# print(alphabet_list)
+
+
+#26.Add Odd Number in another list from original list:-
+# List=[1,2,3,4,5,6,7,8]
+# Odd_list=[]
+# for i in list:
+#      if i%2!=0:
+#              List.append(i)
+# print(Odd_list)
+
+
+#27. Add Even Number in another list from original list:-
+# List=[1,2,3,4,5,6,7,8]
+# Even_list=[]
+# for i in list:
+#      if i%2==0:
+#              List.append(i)
+# print(Even_list)
+
+
+
+# 28) Find Min element in the list:
+
+# numbers = [10, 20, 3, 40, 5]
+# min_element = numbers[0]
+# for num in numbers:
+#     if num < min_element:
+#         min_element = num
+# print(min_element)
+
+
+# 29) Add Odd Number in another list from original list:
+
+# original_list = [1, 2, 3, 4, 5, 6]
+# odd_numbers = []
+# for num in original_list:
+#     if num % 2 != 0:
+#         odd_numbers.append(num)
+
+# print(original_list)
+# print(odd_numbers)
+
+
+
+# 30) Add Even Number in another list from original list:
+
+original_list = [1, 2, 3, 4, 5, 6]
+even_numbers = []
+for num in original_list:
+    if num % 2 == 0:
+        even_numbers.append(num)
+print(original_list)
+print(even_numbers)

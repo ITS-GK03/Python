@@ -147,5 +147,3 @@
 #     sum+=number
 
 # print("The sum of numbers:", sum)
-
-
