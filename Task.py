@@ -366,10 +366,10 @@
 
 # 30) Add Even Number in another list from original list:
 
-original_list = [1, 2, 3, 4, 5, 6]
-even_numbers = []
-for num in original_list:
-    if num % 2 == 0:
-        even_numbers.append(num)
-print(original_list)
-print(even_numbers)
+# original_list = [1, 2, 3, 4, 5, 6]
+# even_numbers = []
+# for num in original_list:
+#     if num % 2 == 0:
+#         even_numbers.append(num)
+# print(original_list)
+# print(even_numbers)
