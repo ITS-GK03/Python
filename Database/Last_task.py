@@ -84,42 +84,47 @@ studentsData = [
     }
 ]
 
+result = collection.delete_many({})
+print(f"Deleted {result.deleted_count} documents")
 
-def createStudentsData(a):
-    print(a)
-    res = collection.insert_many(a)
-    print("students added!!!")
+def Insert_students(data):
+    res = collection.insert_many(data)
+    print("Students added in the Database","\n")
+Insert_students(studentsData)
 
-# createStudentsData(studentsData)
+def get_student_rankings():
+    students = collection.find()
+    student_list = []
+    for student in students:
+        total = sum(student["score"])
+        average = total / len(student["score"])
+        student_list.append({
+            "Name": student["name"],
+            "Total": total,
+            "Average": average
+        })
 
+    sorted_list = []
+    while student_list:
+        highest = student_list[0]
+        for k in student_list:
+            if k["Total"] > highest["Total"]:
+                highest = k
+        student_list.remove(highest)
+        sorted_list.append(highest)
 
+    for i in range(len(sorted_list)):
+        sorted_list[i]["Rank"] = i + 1
+    return sorted_list
 
-def get_all_students():
-    try:
-        students = collection.find()
-        for student in students:
-            print(f"ID: {student['_id']}")
-    except Exception as e:
-        print("Error while fetching students:", e)
+ranked_students = get_student_rankings()
 
-# get_all_students()
-
-
-
-def calculate_total_and_average():
-    try:
-        students = collection.find()
-        for student in students:
-            scores = student.get("score", [])
-            if scores:
-                total = sum(scores)
-                average = total / len(scores)
-                print(f"Name: {student['name']}")
-                # print(f"Scores: {scores}")
-                print(f"Total: {total}")
-                print(f"Average: {average:.2f}")
-                print("\n")
-    except Exception as e:
-        print("Error while calculating total and average:", e)
-
-calculate_total_and_average()
+print("[")
+for student in ranked_students:
+    print("  {")
+    print(f"    Name: {student['Name']}")
+    print(f"    Total: {student['Total']}")
+    print(f"    Average: {student['Average']:.2f}")
+    print(f"    Rank: {student['Rank']}")
+    print("  },")
+print("]")

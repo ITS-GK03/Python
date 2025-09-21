@@ -243,4 +243,4 @@ def quaryData():
     data = collection.find(quary).sort("age", -1)
     for i in data:
         print(i)
-quaryData()
+# quaryData()
