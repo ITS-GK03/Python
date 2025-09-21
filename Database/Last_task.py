@@ -92,7 +92,7 @@ def Insert_students(data):
     print("Students added in the Database","\n")
 Insert_students(studentsData)
 
-def get_student_rankings():
+def get_stud_rank():
     students = collection.find()
     student_list = []
     for student in students:
@@ -117,14 +117,14 @@ def get_student_rankings():
         sorted_list[i]["Rank"] = i + 1
     return sorted_list
 
-ranked_students = get_student_rankings()
+ranked_students = get_stud_rank()
 
 print("[")
 for student in ranked_students:
     print("  {")
-    print(f"    Name: {student['Name']}")
-    print(f"    Total: {student['Total']}")
-    print(f"    Average: {student['Average']:.2f}")
-    print(f"    Rank: {student['Rank']}")
+    print(f" Name: {student['Name']}")
+    print(f" Total: {student['Total']}")
+    print(f" Average: {student['Average']:.2f}")
+    print(f" Rank: {student['Rank']}")
     print("  },")
 print("]")
